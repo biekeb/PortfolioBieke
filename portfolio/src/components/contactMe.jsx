@@ -1,5 +1,7 @@
 import React from "react";
-
+import lkicon from "../images/Icon awesome-linkedin-in.svg";
+import ghicon from "../images/Icon awesome-github.svg";
+import emailicon from "../images/Icon simple-email.svg";
 const ContactMe = () => {
   return (
     <div className="contact-me">
@@ -20,23 +22,35 @@ const ContactMe = () => {
           style={{
             width: "100px",
             height: "100px",
-            backgroundColor: "red",
+            //backgroundColor: "red",
           }}
-        ></div>
+        >
+          <a href="https://www.linkedin.com/in/bieke-bellot-b8b8a11b8/">
+            <img style={{ width: "50%" }} src={lkicon} alt="linkedin icon" />
+          </a>
+        </div>
         <div
           style={{
             width: "100px",
             height: "100px",
-            backgroundColor: "red",
+            //backgroundColor: "red",
           }}
-        ></div>
+        >
+          <a href="https://github.com/biekeb">
+            <img style={{ width: "50%" }} src={ghicon} alt="github icon" />
+          </a>
+        </div>
         <div
           style={{
             width: "100px",
             height: "100px",
-            backgroundColor: "red",
+            //backgroundColor: "red",
           }}
-        ></div>
+        >
+          <a href="https://www.linkedin.com/in/leah-kim-1b1a3b1b0/">
+            <img style={{ width: "50%" }} src={emailicon} alt="email icon" />
+          </a>
+        </div>
       </div>
     </div>
   );

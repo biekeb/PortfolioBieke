@@ -22,7 +22,7 @@ body {
 h1{
 -webkit-text-stroke: 1pt var(--white);
 color:var(--black);
-font-size: 38pt;
+font-size: 30pt;
 font-weight: 100;
 
 }
@@ -139,4 +139,17 @@ text-align: center;
 
 .contact-me{
     margin: 5%;
+}
+
+
+
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: var(--red);
+    transform-origin: 0%;
 }
