@@ -11,49 +11,51 @@ import adobexd from "../images/adobexd.png";
 const ProjectTechno = () => {
   return (
     <div className="project-technologies">
-      <h2>Technologies</h2>
+      <h2>Used technologies</h2>
 
-      <div className="technologies-element">
-        <h3>Frontend Development</h3>
-        <div className="technologies-flex">
-          <div>
-            <img src={react} alt="" />
-          </div>
-          <div>
-            <img src={css} alt="" />
-          </div>
-          <div>
-            <img src={html} alt="" />
-          </div>
-          <div>
-            <img src={javascript} alt="" />
+      <div className="techno-flex">
+        <div className="technologies-element">
+          <h3>Frontend Development</h3>
+          <div className="technologies-flex">
+            <div>
+              <img src={react} alt="" />
+            </div>
+            <div>
+              <img src={css} alt="" />
+            </div>
+            <div>
+              <img src={html} alt="" />
+            </div>
+            <div>
+              <img src={javascript} alt="" />
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="technologies-element">
-        <h3>3D Content</h3>
-        <div className="technologies-flex">
-          <div>
-            <img src={maya} alt="" />
-          </div>
-          <div>
-            <img src={unity} alt="" />
+        <div className="technologies-element">
+          <h3>3D Content</h3>
+          <div className="technologies-flex">
+            <div>
+              <img src={maya} alt="" />
+            </div>
+            <div>
+              <img src={unity} alt="" />
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="technologies-element">
-        <h3>Grapich Design</h3>
-        <div className="technologies-flex">
-          <div>
-            <img src={photoshop} alt="" />
-          </div>
-          <div>
-            <img src={adobexd} alt="" />
-          </div>
-          <div>
-            <img src={photoshop} alt="" />
+        <div className="technologies-element">
+          <h3>Grapich Design</h3>
+          <div className="technologies-flex">
+            <div>
+              <img src={photoshop} alt="" />
+            </div>
+            <div>
+              <img src={adobexd} alt="" />
+            </div>
+            <div>
+              <img src={photoshop} alt="" />
+            </div>
           </div>
         </div>
       </div>
