@@ -15,7 +15,10 @@ const ContactMe = () => {
         className="flex"
         style={{
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+          backgroundColor: "blue",
         }}
       >
         <div

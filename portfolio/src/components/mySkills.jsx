@@ -48,21 +48,20 @@ function MySkill() {
           </div>
         </div>
       </div>
+
       <h2>soft</h2>
-      <div className="regular-flex-container">
-        <div className="regular-flex">
-          <div className="regular-flex-element">
-            <CircularProgressBar percentage={70} />
-            <p>Problem solving</p>
-          </div>
-          <div className="regular-flex-element">
-            <CircularProgressBar percentage={80} />
-            <p>Commtion</p>
-          </div>
-          <div className="regular-flex-element">
-            <CircularProgressBar percentage={75} />
-            <p>Collovration</p>
-          </div>
+      <div className="regular-flex">
+        <div className="regular-flex-element">
+          <CircularProgressBar percentage={70} />
+          <p>problem solving</p>
+        </div>
+        <div className="regular-flex-element">
+          <CircularProgressBar percentage={80} />
+          <p>communi -cation</p>
+        </div>
+        <div className="regular-flex-element">
+          <CircularProgressBar percentage={75} />
+          <p>collaboration</p>
         </div>
       </div>
     </div>
