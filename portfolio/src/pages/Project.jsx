@@ -5,6 +5,8 @@ import { motion, useScroll } from "framer-motion";
 import MyRole from "../components/MyRole";
 import ProjectDescription from "../components/ProjectDescription";
 import ProjectTechno from "../components/ProjectTechno";
+import Footer from "../components/Footer";
+import ProjectObjectives from "../components/ProjectObjectives";
 
 export default function Projects() {
   const { scrollYProgress } = useScroll();
@@ -24,12 +26,12 @@ export default function Projects() {
             <ProjectDescription />
             <MyRole />
             <ProjectTechno />
+            <ProjectObjectives />
           </main>
-
-          <div className="project-objectives">
-            <h2>Project objectibes</h2>
-          </div>
         </div>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </>
   );
