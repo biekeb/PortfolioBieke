@@ -9,7 +9,9 @@ const MyProjects = () => {
         <img src={project1} alt="" />
       </div>
       <div className="my-project-img">
-        <img src={project1} alt="" />
+        <a href="/project">
+          <img src={project1} alt="" />
+        </a>
       </div>
       <h1>MY SKILLS</h1>
     </div>
