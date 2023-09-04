@@ -14,26 +14,27 @@ const MyRole = () => {
         </div>
 
         <div className="myrole-div">
-          <h3>Developer</h3>
+          <h3>Designer</h3>
           <p>
-            i was responsible for homepage and timetable to ensure that it
-            delivered a seamless and engaging user experience.
+            My design contributions played a vital role in creating an
+            aesthetically pleasing and cohesive visual identity for the project.{" "}
           </p>
         </div>
 
         <div className="myrole-div">
-          <h3>Developer</h3>
+          <h3>Scrum master</h3>
           <p>
-            i was responsible for homepage and timetable to ensure that it
-            delivered a seamless and engaging user experience.
+            As the Scrum Master, I was tasked with orchestrating the Agile
+            development process within our team.
           </p>
         </div>
 
         <div className="myrole-div">
-          <h3>Developer</h3>
+          <h3>Team</h3>
           <p>
-            i was responsible for homepage and timetable to ensure that it
-            delivered a seamless and engaging user experience.
+            This project was a collaborative effort among four team members.
+            Teamwork and effective communication were at the core of our
+            success.
           </p>
         </div>
       </div>
