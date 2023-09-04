@@ -153,6 +153,7 @@ text-align: center;
 
 
 .progress-bar {
+    z-index: 999;
     position: fixed;
     top: 0;
     left: 0;
@@ -162,3 +163,9 @@ text-align: center;
     transform-origin: 0%;
 }
 
+@media (min-width: 700px) {
+   h1{
+    font-size: 40pt;
+   }
+
+}
