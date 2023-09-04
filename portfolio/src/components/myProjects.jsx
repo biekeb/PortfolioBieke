@@ -5,10 +5,10 @@ const MyProjects = () => {
   return (
     <div className="my-project">
       <h1>MY PROJECTS</h1>
-      <div className="project">
+      <div className="my-project-img">
         <img src={project1} alt="" />
       </div>
-      <div className="project">
+      <div className="my-project-img">
         <img src={project1} alt="" />
       </div>
       <h1>MY SKILLS</h1>

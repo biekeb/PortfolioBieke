@@ -5,21 +5,29 @@ import MyProjects from "../components/myProjects";
 import MySkills from "../components/mySkills";
 import ContactMe from "../components/contactMe";
 import { motion, useScroll } from "framer-motion";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
   return (
     <>
+      <header>
+        <Introduction />
+      </header>
+
       <motion.div
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
       />
-
-      {/* <Introduction /> */}
-      <AboutMe />
-      <MyProjects />
-      <MySkills />
-      <ContactMe />
+      <main>
+        <AboutMe />
+        <MyProjects />
+        <MySkills />
+        <ContactMe />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
