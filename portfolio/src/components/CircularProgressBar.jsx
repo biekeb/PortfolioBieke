@@ -8,7 +8,7 @@ function CircularProgressBar({ percentage }) {
     <AnimatedProgressProvider
       valueStart={0}
       valueEnd={percentage}
-      duration={2}
+      duration={5}
       easingFunction={easeQuadInOut}
     >
       {(value) => {

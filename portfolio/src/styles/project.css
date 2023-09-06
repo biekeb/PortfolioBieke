@@ -17,7 +17,7 @@ background-size: cover;
 }
 
 .project h2{
-    color: var(--red);
+    color: var(--white);
 }
 
 .project h3 {
@@ -56,9 +56,9 @@ background-size: cover;
 .myrole-flex{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-between;
     flex-wrap: wrap;
-    /* border: 1pt solid blue; */
+    border: 1pt solid blue;
 }
 
 
@@ -70,6 +70,7 @@ background-size: cover;
     box-shadow: 0px 0px 10px 0px rgba(201, 49, 49, 0.75);
     padding: 10px;
     background-color: var(--black);
+    border: 1pt solid red;
 }
 
 .myrole-div:hover {
@@ -122,42 +123,10 @@ background-size: cover;
     margin-bottom: 50px;
 }
 
-@media  (min-width: 700px) {
-    .descr-flex {
-        margin-left: -5%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-    }
+@media  (min-width: 800px) {
 
-    .descr-item1 {
-        display: block;
-        flex-grow: 0;
-        flex-shrink: 1;
-        flex-basis: auto;
-        align-self: center;
-        order: 0;
-        word-break: break-all;
-        writing-mode: vertical-lr;
-        transform: rotate(180deg);
-        /* border: 1pt solid red; */
-    }
-
-    .descr-item2 {
-        display: block;
-        flex-grow: 2;
-        flex-shrink: 1;
-        flex-basis: auto;
-        align-self: auto;
-        order: 0;
-        writing-mode: horizontal-tb;   
-    }
 
         .project h2 {
-            color: var(--red);
             font-size: 24pt;
         }
     
@@ -182,7 +151,6 @@ background-size: cover;
         }
     .myrole-div {
         /* border: 1pt solid red; */
-        flex: 0 0 calc(50% - 30px);
         margin-bottom: 8%;
         border-radius: 20px;
         box-shadow: 0px 0px 10px 0px rgba(201, 49, 49, 0.75);
@@ -194,6 +162,39 @@ background-size: cover;
 }
 
 @media (min-width: 1000px) {
+
+        .descr-flex {
+                margin-left: -5%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+                align-content: center;
+            }
+        
+            .descr-item1 {
+                display: block;
+                flex-grow: 0;
+                flex-shrink: 1;
+                flex-basis: auto;
+                align-self: center;
+                order: 0;
+                word-break: break-all;
+                writing-mode: vertical-lr;
+                transform: rotate(180deg);
+                /* border: 1pt solid red; */
+            }
+        
+            .descr-item2 {
+                display: block;
+                flex-grow: 2;
+                flex-shrink: 1;
+                flex-basis: auto;
+                align-self: auto;
+                order: 0;
+                writing-mode: horizontal-tb;
+            }
     
     .technologies-element img {
         width: 50%;
@@ -206,6 +207,7 @@ background-size: cover;
         box-shadow: 0px 0px 10px 0px rgba(201, 49, 49, 0.75);
         padding: 10px;
         background-color: var(--black);
+        margin-right: 3%;
     }
 
     .techno-flex{
@@ -224,9 +226,23 @@ background-size: cover;
             width: 100%;             
          }
 
+                 .myrole-flex {
+
+                     justify-content: flex-start;
+
+                 }
+        
+        
+                 .myrole-div {
+                     /* border: 1pt solid red; */
+                     flex: 0 0 calc(23% - 30px);
+
+                 }
+
 }
 
 @media (min-width: 1500px) {
+    
     .project{
         margin: 5% 10%;
     }
@@ -243,5 +259,5 @@ background-size: cover;
     }
          .technologies-element img {
              width: 70%;
-         }
+        }
 }

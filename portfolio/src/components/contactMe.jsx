@@ -11,47 +11,21 @@ const ContactMe = () => {
         Connect with me on [LinkedIn](link-to-your-linkedin) | Follow me on
         [GitHub](link-to-your-github)
       </p>
-      <div
-        className="flex"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "100%",
-          backgroundColor: "blue",
-        }}
-      >
-        <div
-          style={{
-            width: "100px",
-            height: "100px",
-            //backgroundColor: "red",
-          }}
-        >
+      <div className="contact-flex">
+        <div className="contact-flex-item">
           <a href="https://www.linkedin.com/in/bieke-bellot-b8b8a11b8/">
-            <img style={{ width: "50%" }} src={lkicon} alt="linkedin icon" />
+            <img src={lkicon} alt="linkedin icon" />
           </a>
         </div>
-        <div
-          style={{
-            width: "100px",
-            height: "100px",
-            //backgroundColor: "red",
-          }}
-        >
+        <div className="contact-flex-item">
           <a href="https://github.com/biekeb">
-            <img style={{ width: "50%" }} src={ghicon} alt="github icon" />
+            <img src={ghicon} alt="github icon" />
           </a>
         </div>
-        <div
-          style={{
-            width: "100px",
-            height: "100px",
-            //backgroundColor: "red",
-          }}
-        >
+
+        <div className="contact-flex-item">
           <a href="https://www.linkedin.com/in/leah-kim-1b1a3b1b0/">
-            <img style={{ width: "50%" }} src={emailicon} alt="email icon" />
+            <img src={emailicon} alt="email icon" />
           </a>
         </div>
       </div>

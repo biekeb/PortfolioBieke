@@ -7,8 +7,13 @@ function MySkill() {
 
   return (
     <div className="pogress">
-      <h2>regular</h2>
-      <div className="regular-flex-container">
+      <div className="am-item1">
+        <h1>MY SKILLS</h1>
+      </div>
+
+      <div className="my-project-flex">
+        <h2>regular</h2>
+
         <div className="regular-flex">
           <div className="regular-flex-element">
             <CircularProgressBar percentage={90} />
@@ -47,21 +52,21 @@ function MySkill() {
             <p>Adobe XD</p>
           </div>
         </div>
-      </div>
 
-      <h2>soft</h2>
-      <div className="regular-flex">
-        <div className="regular-flex-element">
-          <CircularProgressBar percentage={70} />
-          <p>problem solving</p>
-        </div>
-        <div className="regular-flex-element">
-          <CircularProgressBar percentage={80} />
-          <p>communi -cation</p>
-        </div>
-        <div className="regular-flex-element">
-          <CircularProgressBar percentage={75} />
-          <p>collaboration</p>
+        <h2>soft</h2>
+        <div className="regular-flex">
+          <div className="regular-flex-element">
+            <CircularProgressBar percentage={70} />
+            <p>problem solving</p>
+          </div>
+          <div className="regular-flex-element">
+            <CircularProgressBar percentage={80} />
+            <p>communi -cation</p>
+          </div>
+          <div className="regular-flex-element">
+            <CircularProgressBar percentage={75} />
+            <p>collaboration</p>
+          </div>
         </div>
       </div>
     </div>
