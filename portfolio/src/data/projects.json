@@ -1,0 +1,123 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "title": "FINALSHOW",
+      "image": "https://i.ibb.co/pjpZ5Zq/finalshow.png",
+      "description": "FinalShow is a comprehensive project that encompasses a recorded physical award show and an innovative interactive application. This initiative was undertaken as part of our college curriculum. The cornerstone of this project was the development of a web application that served as the central hub for the entire award show experience. The website's Landing Page was designed to provide a user-friendly, digital map and world view, showcasing the various activities and events scheduled for our college's Award Show.",
+        "link": "",
+
+         "roles": [
+            {
+            "id": 1,
+            "title": "Web Developer",
+            "responsibilities": "Responsible for designing and developing the web application."
+            },
+            {
+            "id": 2,
+            "title": "Designer",
+            "responsibilities": "My design contributions played a vital role in creating an aesthetically pleasing and cohesive visual identity for the project."
+            },
+            {
+            "id": 3,
+            "title": "Scrum master",
+            "responsibilities": "As the Scrum Master, I was tasked with orchestrating the Agile development process within our team."
+            },
+            {
+            "id": 4,
+            "title": "Team",
+            "responsibilities": "This project was a collaborative effort among four team members. Teamwork and effective communication were at the core of our success."
+            }
+        ],
+        "technologies": [
+            {
+            "id": 1,
+            "title": "Frontend Development",
+            "fdImg": [
+                  "https://i.ibb.co/d2fymhs/js.png",
+                  "https://i.ibb.co/8MYxj7D/css.png",
+                  "https://i.ibb.co/qD0PLPv/html.png",
+                  "https://i.ibb.co/Mf9ny73/react.png"
+                ]
+            
+            },
+            {
+            "id": 2,
+            "title": "3D Content",
+              "3DImg": [
+                "https://i.ibb.co/rF5mkXm/maya.png",
+                "https://i.ibb.co/DbSYc9M/unity.png"
+              ]
+
+            },
+            {
+            "id": 3,
+            "title": "Grapich Design",
+    "gdImg": [
+      "https://i.ibb.co/1ZJ9bVB/photoshop.png",
+      "https://i.ibb.co/LRB1jF1/adobexd.png",
+                    "https://i.ibb.co/nMRJDqv/premiere-pro.png",
+              "https://i.ibb.co/cvFXjyT/illustrator.png"
+    ]
+            }
+        ],
+        "objective1": "To seamlessly integrate a recorded physical award show with an interactive digital platform.",
+        "objective2": "To provide attendees and participants with a visually engaging and user-friendly interface to explore event activities."
+    },
+
+
+
+
+
+
+
+
+
+      {
+      "id": 2,
+      "title": "CHANGING EARTH",
+      "description": "The Changing Earth project, created as a school assignment, serves as an immersive platform to educate and raise awareness about the human causes of climate change. Its primary objective is to provide a visual representation of the profound impact climate change has on society and the environment. Through compelling visuals and interactive features, this project seeks to engage and inform visitors about the urgency of addressing climate-related issues.",
+        "link": "",
+        "image":"https://i.ibb.co/Gn1NWrs/earth.png",
+
+         "roles": [
+            {
+            "id": 1,
+            "title": "Web Developer",
+            "responsibilities": "Leveraging the power of modern web technologies, I implemented the project using React and a range of related libraries and frameworks."
+            },
+            {
+            "id": 2,
+            "title": "Designer",
+            "responsibilities": "I conceptualized the project's design and interactive elements, aiming to create a visually engaging and educational experience."
+            }
+        ],
+        "technologies": [
+            {
+            "id": 1,
+            "title": "Frontend Development",
+            "fdImg": [
+                  "https://i.ibb.co/d2fymhs/js.png",
+                  "https://i.ibb.co/8MYxj7D/css.png",
+                  "https://i.ibb.co/qD0PLPv/html.png",
+                  "https://i.ibb.co/Mf9ny73/react.png"
+              ]
+            },
+            
+            {
+            "id": 2,
+            "title": "Grapich Design",
+            "gdImg": [
+              "https://i.ibb.co/1ZJ9bVB/photoshop.png",
+              "https://i.ibb.co/LRB1jF1/adobexd.png",
+              "https://i.ibb.co/cvFXjyT/illustrator.png"
+            ]
+            }
+            
+        ],
+        "objective1": "To inform visitors about the human causes of climate change and the consequences for society and the planet.",
+        "objective2": " Create an immersive and interactive experience that encourages exploration and learning."
+    }
+
+  ]
+}
