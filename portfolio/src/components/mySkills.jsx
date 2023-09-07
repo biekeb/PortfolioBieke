@@ -1,16 +1,47 @@
 import React from "react";
+import { motion, useAnimation } from "framer-motion";
 import CircularProgressBar from "./CircularProgressBar";
+import { useInView } from "react-intersection-observer";
 
 function MySkill() {
-  const percentage1 = 50;
-  const percentage2 = 30;
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  const fadeInAndSpring = {
+    hidden: { opacity: 0, y: 40 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 2,
+        type: "spring",
+        damping: 10,
+        stiffness: 100,
+      },
+    },
+  };
+
+  // Trigger animations when inView changes
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [controls, inView]);
 
   return (
-    <div className="pogress">
+    <motion.div
+      className="pogress"
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={fadeInAndSpring}
+    >
+      {" "}
       <div className="am-item1">
         <h1>MY SKILLS</h1>
       </div>
-
       <div className="my-project-flex">
         <h2>regular</h2>
 
@@ -69,7 +100,7 @@ function MySkill() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
