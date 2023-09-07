@@ -15,15 +15,20 @@ import ContactMe from "../components/contactMe";
 import Footer from "../components/Footer";
 
 export default function Home() {
+  const ref = useRef();
+
   const { scrollYProgress } = useScroll();
   return (
     <>
-      <header>{/* <Introduction /> */}</header>
+      <header>
+        <Introduction />
+      </header>
 
       <motion.div
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
       />
+
       <div className="project-bakcground">
         <main>
           <AboutMe />

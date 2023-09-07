@@ -5,31 +5,31 @@ import { easeQuadInOut } from "d3-ease";
 
 function CircularProgressBar({ percentage }) {
   return (
-    <AnimatedProgressProvider
-      valueStart={0}
-      valueEnd={percentage}
-      duration={5}
-      easingFunction={easeQuadInOut}
-    >
-      {(value) => {
-        const roundedValue = Math.round(value);
-        return (
-          <CircularProgressbar
-            value={value}
-            text={`${roundedValue}%`}
-            strokeWidth={2}
-            styles={buildStyles({
-              textSize: "20px",
-              pathColor: `red`,
-              textColor: "#f88",
-              trailColor: "grey",
-              backgroundColor: "#3e98c7",
-              pathTransition: "none",
-            })}
-          />
-        );
-      }}
-    </AnimatedProgressProvider>
+    // <AnimatedProgressProvider
+    //   valueStart={0}
+    //   valueEnd={percentage}
+    //   duration={1}
+    //   easingFunction={easeQuadInOut}
+    // >
+    // {(value) => {
+    //   const roundedValue = Math.round(value);
+    //   return (
+    <CircularProgressbar
+      value={percentage}
+      text={`${percentage}%`}
+      strokeWidth={2}
+      styles={buildStyles({
+        textSize: "20px",
+        pathColor: `red`,
+        textColor: "#f88",
+        trailColor: "grey",
+        backgroundColor: "#3e98c7",
+        pathTransition: "none",
+      })}
+    />
+    //   );
+    // }}
+    // </AnimatedProgressProvider>
   );
 }
 
