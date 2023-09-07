@@ -7,7 +7,6 @@
 
 .IntroductionText{
     color: white;
-    border: 1pt solid red;
     position: absolute;
     top: 40%;
     left: 5%;
@@ -31,4 +30,34 @@
     padding: 0;
     -webkit-text-stroke: 0pt var(--white);
     color: rgb(185, 185, 185);
+}
+
+@media (min-width: 800px) {
+.IntroductionText {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .IntroductionText {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+        .IntroductionText h1 {
+            font-size: 50pt;
+
+        }
+                .IntroductionText h2 {
+                    font-size: 20pt;
+
+                }
 }

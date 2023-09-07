@@ -58,7 +58,7 @@ background-size: cover;
     flex-direction: row;
     justify-content:space-between;
     flex-wrap: wrap;
-    border: 1pt solid blue;
+    /* border: 1pt solid blue; */
 }
 
 
@@ -238,6 +238,8 @@ background-size: cover;
                      flex: 0 0 calc(23% - 30px);
 
                  }
+
+                 
 
 }
 

@@ -4,8 +4,9 @@
 :root {
     --black: #191919;
     --white: #F2F2F2;
-    --red: #DF5757;
+    --red: hsl(0, 68%, 61%);
 }
+
 main {
 margin: 5%;
 }
@@ -89,4 +90,19 @@ p{
    }
 
 
+}
+
+@media (min-width: 1000px) {
+
+.contact-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    .contact-flex-item img{
+        /* border: 1pt solid red; */
+        width: 70%;
+    }
 }
