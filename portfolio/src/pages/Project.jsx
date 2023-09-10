@@ -31,7 +31,7 @@ export default function Projects() {
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
       />
-      <button>
+      <button className="back-button">
         <a href="/">Back</a>
       </button>
       <div className="project-bakcground">
