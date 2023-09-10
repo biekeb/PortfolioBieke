@@ -49,16 +49,17 @@ const ContactMe = () => {
 
         <div className="am-item2">
           <p>
-            Let's connect! Feel free to reach out to me on
-            <a href="mailto:bieke.blt@gmail.com">[email]</a>. Connect with me on
-            <a href="https://www.linkedin.com/in/bieke-bellot-b8b8a11b8/">
-              LinkedIn
-            </a>
-            | Follow me on <a href="https://github.com/biekeb">GitHub</a>
+            Let's connect! Feel free to reach out to me on email. Connect with
+            me on LinkedIn and follow me on GitHub
           </p>
         </div>
 
         <div className="contact-flex">
+          <div className="contact-flex-item">
+            <a href="mailto:bieke.blt@gmail.com">
+              <img src={emailicon} alt="email icon" />
+            </a>
+          </div>
           <div className="contact-flex-item">
             <a href="https://www.linkedin.com/in/bieke-bellot-b8b8a11b8/">
               <img src={lkicon} alt="linkedin icon" />
@@ -67,12 +68,6 @@ const ContactMe = () => {
           <div className="contact-flex-item">
             <a href="https://github.com/biekeb">
               <img src={ghicon} alt="github icon" />
-            </a>
-          </div>
-
-          <div className="contact-flex-item">
-            <a href="https://www.linkedin.com/in/leah-kim-1b1a3b1b0/">
-              <img src={emailicon} alt="email icon" />
             </a>
           </div>
         </div>

@@ -5,7 +5,13 @@
       "title": "FINALSHOW",
       "image": "https://i.ibb.co/pjpZ5Zq/finalshow.png",
       "description": "FinalShow is a comprehensive project that encompasses a recorded physical award show and an innovative interactive application. This initiative was undertaken as part of our college curriculum. The cornerstone of this project was the development of a web application that served as the central hub for the entire award show experience. The website's Landing Page was designed to provide a user-friendly, digital map and world view, showcasing the various activities and events scheduled for our college's Award Show.",
-        "link": "",
+      "link": "https://www.finalshow.be/",
+       "imageshowcase": [
+                  "https://i.ibb.co/0YjqBtt/finalshow.png",
+                  "https://i.ibb.co/grMKBzN/finalshow1.png",
+                  "https://i.ibb.co/g3kmNXC/finalshow2.png",
+                  "https://i.ibb.co/RHgt0GW/finalshow3.png"
+                ],
 
          "roles": [
             {
@@ -72,14 +78,17 @@
 
 
 
-
       {
       "id": 2,
       "title": "CHANGING EARTH",
       "description": "The Changing Earth project, created as a school assignment, serves as an immersive platform to educate and raise awareness about the human causes of climate change. Its primary objective is to provide a visual representation of the profound impact climate change has on society and the environment. Through compelling visuals and interactive features, this project seeks to engage and inform visitors about the urgency of addressing climate-related issues.",
-        "link": "",
+        "link": "https://frontend-werkstuk-22-23-biekeb2.onrender.com/topic",
         "image":"https://i.ibb.co/Gn1NWrs/earth.png",
-
+        "imageshowcase": [
+                  "https://i.ibb.co/X5p4BMc/earth.png",
+                  "https://i.ibb.co/9gDVxbz/chaningearth2.png",
+                  "https://i.ibb.co/SKKDWfC/chaningearth3.png"
+                ],
          "roles": [
             {
             "id": 1,
