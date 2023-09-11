@@ -75,11 +75,8 @@ const AboutMe = () => {
             </div>
 
             <div className="box-flex-item">
-              <a
-                href="https://example.com/path-to-your-resume/resume.pdf"
-                download
-              >
-                <p>Download my resume</p>
+              <a href="https://online.flippingbook.com/view/163875047/">
+                <p>View my resume</p>
               </a>
             </div>
           </div>
