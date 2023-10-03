@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Front-End Web Developer Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This repository contains the source code for my front-end web developer portfolio. This portfolio showcases my skills, projects, and experience as a front-end developer. It is built using React and various libraries to create an engaging and interactive user experience.
 
-In the project directory, you can run:
+## Dependencies
 
-### `npm start`
+Here is a list of dependencies used in this project:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **@react-spring/parallax**: Version 9.7.3
+- **@testing-library/jest-dom**: Version 5.17.0
+- **@testing-library/react**: Version 13.4.0
+- **@testing-library/user-event**: Version 13.5.0
+- **d3-ease**: Version 3.0.1
+- **framer-motion**: Version 10.16.2
+- **react**: Version 18.2.0
+- **react-circular-progressbar**: Version 2.1.0
+- **react-dom**: Version 18.2.0
+- **react-intersection-observer**: Version 9.5.2
+- **react-move**: Version 6.5.0
+- **react-router-dom**: Version 6.15.0
+- **react-scripts**: Version 5.0.1
+- **react-spring**: Version 9.7.2
+- **three**: Version 0.156.0
+- **vanta**: Version 0.5.24
+- **web-vitals**: Version 2.1.4
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Development Dependencies
 
-### `npm test`
+- **tailwindcss**: Version 3.3.3
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Browserslist
 
-### `npm run build`
+The project targets the following browsers:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Development:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- The last 1 version of Chrome
+- The last 1 version of Firefox
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+To run this portfolio locally, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies using your package manager of choice (e.g., `npm install` or `yarn install`).
+4. Use the available scripts to start the development server, build the project, run tests, or eject from the `react-scripts` setup.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Author
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Bieke Bellot
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contact
 
-## Learn More
+For inquiries or feedback, you can reach me at [bieke.blt@gmail.com].
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for visiting my front-end web developer portfolio! Enjoy exploring my projects and experiences.
