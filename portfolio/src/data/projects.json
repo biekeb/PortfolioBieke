@@ -17,7 +17,7 @@
             {
             "id": 1,
             "title": "Web Developer",
-            "responsibilities": "Responsible for designing and developing the web application."
+            "responsibilities": "I was responsible for designing and developing the homepage of the web application, as well as the timetable page."
             },
             {
             "id": 2,
@@ -68,7 +68,10 @@
             }
         ],
         "objective1": "To seamlessly integrate a recorded physical award show with an interactive digital platform.",
-        "objective2": "To provide attendees and participants with a visually engaging and user-friendly interface to explore event activities."
+        "objective2": "To provide attendees and participants with a visually engaging and user-friendly interface to explore event activities.",
+                
+        "githublink": "https://github.com/MohamedMankouchi/FullProjectsIV_Platform"
+
     },
 
 
@@ -125,7 +128,9 @@
             
         ],
         "objective1": "To inform visitors about the human causes of climate change and the consequences for society and the planet.",
-        "objective2": " Create an immersive and interactive experience that encourages exploration and learning."
+        "objective2": " Create an immersive and interactive experience that encourages exploration and learning.",
+
+        "githublink": "https://github.com/EHB-MCT/frontend-werkstuk-22-23-biekeb"
     }
 
   ]

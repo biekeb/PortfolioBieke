@@ -145,6 +145,12 @@ background-size: cover;
     cursor: pointer;
     scale: 1.05;
 }
+.flex {
+    display: flex;
+    /* To horizontally center the buttons */
+    gap: 10px;
+    /* Add some spacing between the buttons */
+}
 
 @media  (min-width: 800px) {
 

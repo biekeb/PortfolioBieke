@@ -78,9 +78,18 @@ const ProjectDescription = () => {
               alt=""
               className="image-transition"
             />
-            <a href={topic.link}>
-              <p id="project-link">go to webpage</p>
-            </a>
+            <div class="flex">
+              <div>
+                <a href={topic.link} class="button-link">
+                  <p id="project-link">Go to Webpage</p>
+                </a>
+              </div>
+              <div>
+                <a href={topic.githublink} class="button-link">
+                  <p id="project-link">Go to GitHub</p>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 

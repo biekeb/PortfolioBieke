@@ -22,9 +22,9 @@
     text-align: center;
 }
 
-.box-gradient:hover {
+/* .box-gradient:hover {
     background: linear-gradient(180deg, var(--black) 0%, var(--red) 100%);
-}
+} */
 
 .box-flex-item p {
     text-align: left;
@@ -64,6 +64,7 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 /* border: 1pt solid red; */
+                                        align-items: center;
 
               
                 }
@@ -76,6 +77,7 @@
             }
             
                 .am-item2 {
+                    
                     flex: 0 0 calc(80% - 20px);
                 /* border: 1pt solid red;                 */
             } 
