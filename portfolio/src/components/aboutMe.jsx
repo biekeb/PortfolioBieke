@@ -75,7 +75,7 @@ const AboutMe = () => {
             </div>
 
             <div className="box-flex-item">
-              <a href="https://online.flippingbook.com/view/163875047/">
+              <a href="./data/CV_Bieke_Bellot.pdf" download>
                 <p>View my resume</p>
               </a>
             </div>
