@@ -60,8 +60,12 @@ const MyProjects = () => {
               <div className="my-project-img">
                 <Link to={`/project/${topic.id}`}>
                   <img src={`${topic.image}`} alt="" />
+
                   <div class="image-overlay">
                     <p>{topic.title}</p>
+                  </div>
+                  <div className="see-more-overlay">
+                    <p>See More ></p>
                   </div>
                 </Link>
               </div>

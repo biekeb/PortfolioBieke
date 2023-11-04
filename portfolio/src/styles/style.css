@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,10 +24,11 @@ body {
 
 
 h1{
--webkit-text-stroke: 1pt var(--white);
-color:var(--black);
-font-size: 30pt;
-font-weight: 100;
+    font-size: 30pt;
+        -webkit-text-stroke-width: 1pt;
+        -webkit-text-stroke-color: red;
+        color: black;
+        font-family: 'Red Rose', cursive;
 
 }
 
@@ -34,8 +36,98 @@ p{
     font-size: 12;
 }
 
+/*skills*/
+.progress-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.skill-item{
+    border: 1pt solid red;
+    padding: 5%;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.skill-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+
+.skill-item{
+    margin: 5%;
+    margin-bottom: 5%;
+}
+
+h2{
+font-family: "red rose";
+font-size: 16pt;
+font-weight: 100;
+}
+
+.skill-item p{
+    font-size: 10pt;
+    font-weight: 100;
+color: rgb(196, 196, 196);
+}
+
 
 /* CONACT ME*/
+
+.contact-form{
+  margin: 5%;
+
+}
+label{
+    font-family: "red rose";
+}
+#name,#email,#description {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 10pt;
+    box-shadow: 0px 0px 10px 0px rgba(201, 49, 49, 0.75);
+}
+
+#description{
+    height: 100px;
+}
+
+#submit{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 10pt;
+}
+
+#submit:hover{
+    cursor: pointer;
+    color: #191919;
+}
+
+
+
 
 
 .contact-flex{

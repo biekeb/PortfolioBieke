@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import lkicon from "../images/Icon awesome-linkedin-in.svg";
 import ghicon from "../images/Icon awesome-github.svg";
 import emailicon from "../images/Icon simple-email.svg";
@@ -25,22 +25,49 @@ const ContactMe = () => {
     },
   };
 
-  // Trigger animations when inView changes
-  React.useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    } else {
-      controls.start("hidden");
-    }
-  }, [controls, inView]);
+  // Form state variables
+  const [formData, setFormData] = useState({
+    name: "",
+    description: "",
+    email: "",
+  });
+
+  // Handle form input changes
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Construct the email body
+    const emailBody = `
+      Name: ${formData.name}
+      Description: ${formData.description}
+      Email: ${formData.email}
+    `;
+
+    // You can send the email using a service like email.js or a server-side API.
+    // Here, we'll just log the email body to the console for demonstration.
+    console.log("Email Body:", emailBody);
+  };
+
   return (
-    <motion.div
+    <div
       ref={ref}
       initial="hidden"
       animate={controls}
       variants={fadeInAndSpring}
     >
+      <h1>CONTACT ME</h1>
+
       <div className="my-project">
+        {/*  
         <div className="about-me">
           <div className="am-item1">
             <h1>CONTACT ME</h1>
@@ -70,9 +97,50 @@ const ContactMe = () => {
               <img src={ghicon} alt="github icon" />
             </a>
           </div>
+        </div> */}
+
+        {/* Contact Form */}
+        <div className="contact-form">
+          <form onSubmit={handleSubmit}>
+            <div className="form-group">
+              <label htmlFor="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="description">Description</label>
+              <textarea
+                id="description"
+                name="description"
+                value={formData.description}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+            <button id="submit" type="submit">
+              Submit
+            </button>
+          </form>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

@@ -1,27 +1,56 @@
+#Line_4,
+#Line_6,
+#Line_5,
+#Line_7,
+#Line_12,
+#Line_13 {
+    transition: transform 0.3s ease-in-out;
+}
 
-
+#Line_12:hover,
+#Line_13:hover {
+    transform: scaleY(0);
+    /* Scale lines to zero height on hover */
+}
+/* 
 .vangaeffect{
     height: 100vh;
     width: 100%;
-}
+    
+} */
 
 .IntroductionText{
     color: white;
-    position: absolute;
-    top: 40%;
-    left: 5%;
-    transform: translate(-0%, -50%);    
+    height: 100vh;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
 }
 
 .IntroductionText h1{
-    font-size: 30pt;
+    font-size: 20pt;
     font-weight: 500;
     margin: 0;
+
+
     padding: 0;
     -webkit-text-stroke: 0pt var(--white);
     color: white;
 }
 
+#my-name{
+    font-size: 30pt;
+-webkit-text-stroke-width: 1pt;
+    -webkit-text-stroke-color: red;
+    color: black;
+    font-family: 'Red Rose', cursive;
+    
+}
+
+.about-me-intro{
+    margin: 5%;
+}
 
 .IntroductionText h2 {
     font-size: 20pt;
@@ -32,32 +61,108 @@
     color: rgb(185, 185, 185);
 }
 
+
+
+.IntroductionText{
+    text-align: center;
+}
+.IntroductionText button {
+    margin-top: 5%;
+}
+
+.IntroductionText button:hover {
+    background-color:rgb(255, 0, 0);
+    transition: 0.3s ease-in-out;
+    
+}
+
+
+.picture-intro{
+    display: none;
+    position: absolute;
+    bottom: 0;    
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 1;
+    border: red solid 1pt;
+}
+
+#introduction-text{
+    margin: 5%;
+}
+
+.picture-intro img{
+    width: 80%;
+    margin-top: 100%;
+    margin-left: 10%;
+
+    position: absolute;
+
+}
+
+#pic-back{
+    filter: blur(8px);
+        -webkit-filter: blur(8px);
+}
+
+
+
 @media (min-width: 800px) {
+    .IntroductionText {
+            color: white;
+            position: absolute;
+            top: 40%;
+            left: 10%;
+            transform: translate(-0%, -50%);
+        }
 .IntroductionText {
         color: white;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
+
+        text-align: left;
     }
+
+        .picture-intro {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            transform: translate(0%, -50%);
+            height: 20%;
+            width: 40%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            z-index: 1;
+        }
+    
+        .picture-intro img {
+            position: absolute;
+    
+    
+        }
 }
 
 @media (min-width: 1200px) {
-    .IntroductionText {
-        color: white;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
+
         .IntroductionText h1 {
-            font-size: 50pt;
+            font-size: 40pt;
 
         }
+                #my-name {
+                    font-size: 52pt;
+
+                }
                 .IntroductionText h2 {
                     font-size: 20pt;
 
                 }
+
+    #introduction-text{
+        padding-right: 60%;
+    }
 }

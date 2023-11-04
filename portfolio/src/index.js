@@ -23,6 +23,7 @@ const router = createBrowserRouter([
       loader: (params) => topicLoader(params),
 
   },
+  
 
 ]);
 

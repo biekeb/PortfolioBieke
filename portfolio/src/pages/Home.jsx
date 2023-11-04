@@ -10,7 +10,7 @@ import "../styles/mySkills.css";
 //components
 import AboutMe from "../components/aboutMe";
 import MyProjects from "../components/myProjects";
-import MySkills from "../components/mySkills";
+import Skills from "../components/skills";
 import ContactMe from "../components/contactMe";
 import Footer from "../components/Footer";
 
@@ -31,9 +31,9 @@ export default function Home() {
 
       <div className="project-bakcground">
         <main>
-          <AboutMe />
+          {/* <AboutMe /> */}
           <MyProjects />
-          <MySkills />
+          <Skills />
           <ContactMe />
         </main>
         <footer>
