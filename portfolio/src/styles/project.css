@@ -1,294 +1,278 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Poppins&display=swap");
 
 :root {
-    --black: #161616;
-    --white: #F2F2F2;
-    --red: #DF5757;
+  --black: #191919;
+  --white: #f2f2f2;
+  --main: #7352ed;
+  --main-dark: rgb(95, 55, 240);
+  --background: #050815;
+  background-color: var(--dark);
+}
+.htmlScreen iframe {
+  width: 1024px;
+  height: 670px;
 }
 
-.project-bakcground{
-background-image: url("../images/backgroundphone.png");
-background-repeat: no-repeat;
-background-size: cover;
+.project h1 {
+  text-align: center;
+  margin-bottom: 5%;
 }
-.project {
-    margin: 5%;
-
-}
-
-.project h2{
-    color: var(--white);
-}
-
-.project h3 {
-    font-size: 14pt;
-    font-weight: 100;
-    color: rgb(233, 233, 233);
-}
-
 .image-transition {
-    transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.project-description img{
-    width: 100%;
-        border-radius: 20px;
-
+.project-description img {
+  width: 100%;
+  border-radius: 20px;
 }
 
+.project-description {
+  margin-bottom: 5%;
+}
 
-#project-link{
-    margin-top: -5px;
-    margin-left: 10px;
-    color: var(--red);
-    font-size: 12pt;
-    font-weight: 100;
-    text-decoration:underline;
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button-link-item {
+  background-color: var(--main);
+  border-radius: 20px;
+  padding: 3%;
 }
 
 #project-link:hover {
-
-    color: red;
-
-    text-decoration: underline;
+  /* color: red; */
 }
 
-.myrole-flex{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    /* border: 1pt solid blue; */
+.myrole-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* border: 1pt solid blue; */
 }
 
-
-.myrole-div{
-    /* border: 1pt solid red; */
-    flex: 0 0 calc(50% - 30px);
-    margin-bottom: 8%;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px 0px rgba(201, 49, 49, 0.75);
-    padding: 10px;
-    background-color: var(--black);
-    /* border: 1pt solid red; */
+.myrole-div {
+  /* border: 1pt solid red; */
+  flex: 0 0 calc(50% - 30px);
+  margin-bottom: 8%;
+  border-radius: 20px;
+  padding: 10px;
+  border-top: 1pt solid var(--main);
+  border-bottom: 1pt solid var(--main);
+  padding: 3%;
 }
 
 .myrole-div:hover {
-    box-shadow: 0px 0px 10px 0px rgba(201, 49, 49, 0.75);
-    transition: 0.5s;
-    cursor: pointer;
-    scale: 1.05;
+  transition: 0.5s;
+  scale: 1.05;
+  border: 1pt solid var(--main);
 }
 
 .myrole-div p {
   font-size: 11pt;
-    font-weight: 100;
-    color: rgb(153, 153, 153);
+  font-weight: 100;
+  color: rgb(187, 187, 187);
 }
 
-
-.technologies-element{
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px 0px rgba(201, 49, 49, 0.75);
-    padding: 1px 5px 10px 10px;
-    margin-bottom: 8%;
-        background-color: var(--black);
+.technologies-element {
+  border-radius: 20px;
+  padding: 3%;
+  margin-bottom: 8%;
+  background-color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .technologies-element:hover {
-    box-shadow: 0px 0px 10px 0px rgba(201, 49, 49, 0.75);
-    transition: 0.5s;
-    cursor: pointer;
-    scale: 1.05;
+  transition: 0.5s;
+  scale: 1.05;
+  border: 1pt solid var(--main);
 }
 
-.technologies-element img{
-    width: 50px;
+.technologies-element img {
+  width: 50px;
 }
 
-.technologies-flex{
-    display: flex;
-    flex-direction: row;
-    /* border: 1pt solid blue; */
-    
+.technologies-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* border: 1pt solid blue; */
 }
 
-.technologies-flex div{
-    flex: 0 0 calc(25% - 20px);
-    /* border: 1pt solid red; */
-    margin: 5px;
+.technologies-flex div {
+  flex: 0 0 calc(25% - 20px);
+  /* border: 1pt solid red; */
+  margin: 5px;
 }
 
-.project-objectives{
-    margin-bottom: 50px;
+.project-objectives {
+  margin-bottom: 50px;
+  text-align: center;
 }
 
-.back-button{
-    margin: 2% 0% 0% 2%;
-            background-color: var(--red);
-            padding: 10px 20px;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-    
+.back-button {
+  margin: 2% 0% 0% 2%;
+  background-color: var(--red);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
 
 .back-button a {
-    color: var(--white);
-    text-decoration: none;
-
+  color: var(--white);
+  text-decoration: none;
 }
 
 .back-button:hover {
-    background-color: red;
-    transition: 0.5s;
-    cursor: pointer;
-    scale: 1.05;
+  transition: 0.5s;
+  cursor: pointer;
+  scale: 1.05;
 }
 .flex {
-    display: flex;
-    /* To horizontally center the buttons */
-    gap: 10px;
-    /* Add some spacing between the buttons */
+  display: flex;
+  /* To horizontally center the buttons */
+  gap: 10px;
+  /* Add some spacing between the buttons */
 }
 
-@media  (min-width: 800px) {
+.descrp-text p {
+  text-align: center;
+}
 
+.laptop-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
-        .project h2 {
-            font-size: 24pt;
-        }
-    
-        .project h3 {
-            font-size: 16pt;
-            font-weight: 100;
-            color: rgb(233, 233, 233);
-        }
+  /* border: 1pt solid red; */
+}
 
-        .project p {
-            font-size: 12pt;
-        }
-        .technologies-element img {
-            width: 70%;
-        }
-  
+.laptop-item {
+  margin-top: 10%;
+  flex: 0 0 calc(50% - 30px);
+
+  /* border: 1pt solid blue; */
+}
+@media (min-width: 700px) {
+  .laptop-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .laptop-item {
+    margin-top: 10%;
+  }
 }
 
 @media (min-width: 800px) {
-    .technologies-element img {
-            width: 60%;
-        }
-    .myrole-div {
-        /* border: 1pt solid red; */
-        margin-bottom: 8%;
-        border-radius: 20px;
-        box-shadow: 0px 0px 10px 0px rgba(201, 49, 49, 0.75);
-        padding: 10px;
-        background-color: var(--black);
-    }
+  .technologies-element img {
+    width: 60%;
+  }
+  .myrole-div {
+    /* border: 1pt solid red; */
+    margin-bottom: 8%;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--black);
+  }
 
-
+  .button-link-item {
+    padding: 10px;
+  }
 }
 
 @media (min-width: 1000px) {
+  .descr-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  /* 
+  .descr-item1 {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: center;
+    order: 0;
+    word-break: break-all;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    /* border: 1pt solid red; 
+  } */
 
-        .descr-flex {
-                margin-left: -5%;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: space-between;
-                align-items: center;
-                align-content: center;
-            }
-        
-            .descr-item1 {
-                display: block;
-                flex-grow: 0;
-                flex-shrink: 1;
-                flex-basis: auto;
-                align-self: center;
-                order: 0;
-                word-break: break-all;
-                writing-mode: vertical-lr;
-                transform: rotate(180deg);
-                /* border: 1pt solid red; */
-            }
-        
-            .descr-item2 {
-                display: block;
-                flex-grow: 2;
-                flex-shrink: 1;
-                flex-basis: auto;
-                align-self: auto;
-                order: 0;
-                writing-mode: horizontal-tb;
-            }
-    
-    .technologies-element img {
-        width: 50%;
-    }
+  /* .descr-item2 {
+    display: block;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    writing-mode: horizontal-tb;
+  } */
 
-    .myrole-div {
-        /* border: 1pt solid red; */
-        flex: 0 0 calc(20% - 5px);
-        border-radius: 20px;
-        box-shadow: 0px 0px 10px 0px rgba(201, 49, 49, 0.75);
-        padding: 10px;
-        background-color: var(--black);
-        margin-right: 3%;
-    }
+  .technologies-element img {
+    width: 50%;
+  }
 
-    .techno-flex{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        
-    }
+  .myrole-div {
+    /* border: 1pt solid red; */
+    flex: 0 0 calc(20% - 5px);
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--black);
+    margin-right: 3%;
+  }
 
-    .technologies-element{
-        flex: 0 0 calc(30% - 30px);
-        /* border: 1pt solid red; */
-        margin: 5px;
-    }
-         .technologies-element img{
-            width: 100%;             
-         }
+  .techno-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
-                 .myrole-flex {
+  .technologies-element {
+    flex: 0 0 calc(30% - 30px);
+    /* border: 1pt solid red; */
+    margin: 5px;
+  }
+  .technologies-element img {
+    width: 100%;
+  }
 
-                     justify-content: flex-start;
+  .myrole-flex {
+    justify-content: center;
+  }
 
-                 }
-        
-        
-                 .myrole-div {
-                     /* border: 1pt solid red; */
-                     flex: 0 0 calc(20% - 30px);
-
-                 }
-
-                 
-
+  .myrole-div {
+    /* border: 1pt solid red; */
+    flex: 0 0 calc(20% - 30px);
+  }
 }
 
 @media (min-width: 1500px) {
-    
-    .project{
-        margin: 5% 10%;
-    }
-    .project h1{
-        font-size: 50pt;
-    }
-    .project-description img {
-            width: 100%;
-            border-radius: 20px;
-    
-        }
-    .descr-flex {
-        margin-left: -12%;
-    }
-         .technologies-element img {
-             width: 70%;
-        }
+  .project {
+    margin: 5% 10%;
+  }
+  .project h1 {
+    font-size: 50pt;
+  }
+  .project-description img {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .technologies-element img {
+    width: 70%;
+  }
 }

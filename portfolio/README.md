@@ -1,3 +1,18 @@
+todo
+projects:
+images zelfde groote
+juiste info
+fotos
+
+objectives
+links
+
+contact me
+
+homepage
+about me
+
+
 # Front-End Web Developer Portfolio
 
 ## Overview

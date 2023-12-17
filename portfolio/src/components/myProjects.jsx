@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import project1 from "../images/finalshow.png";
 import { getTopics } from "../data/dataservice";
 import { Link, useLoaderData } from "react-router-dom";
@@ -14,6 +14,9 @@ export async function loader() {
 const MyProjects = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
+  const [selectedSkills, handleSkillClick] = useState(["See All"]); // Set "See All" as the default filter
+
+  const filterSkills = ["See All", "React", "CSS", "node.js", "Blender"];
 
   // Define animations
   const fadeInAndSpring = {
@@ -52,26 +55,68 @@ const MyProjects = () => {
     >
       <div className="my-project">
         <div className="descr-item1">
-          <h1>MY PROJECTS</h1>
+          <h1 style={{ textAlign: "center" }}>
+            <span style={{ color: "white" }}>MY</span> PROJECTS
+          </h1>
         </div>
-        {topics.map((topic) => (
-          <div className="my-project-flex">
-            <div className="my-project-item">
-              <div className="my-project-img">
-                <Link to={`/project/${topic.id}`}>
-                  <img src={`${topic.image}`} alt="" />
 
-                  <div class="image-overlay">
-                    <p>{topic.title}</p>
-                  </div>
-                  <div className="see-more-overlay">
-                    <p>See More ></p>
-                  </div>
-                </Link>
+        {/* Filter section  */}
+        <div className="skill-filter">
+          {/* <span>Filter by Skills:</span> */}
+          {filterSkills.map((skill) => (
+            <span
+              key={skill}
+              id="project-filter"
+              className={`skill-tag ${
+                selectedSkills.includes(skill) ? "selected" : ""
+              }`}
+              onClick={() => handleSkillClick(skill)}
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+        <div className="my-project-flex">
+          {topics
+            .filter((topic) => {
+              // If "See All" is selected, show all projects
+              if (selectedSkills.includes("See All")) {
+                return true;
+              }
+
+              // If no skills are selected, show all projects
+              if (selectedSkills.length === 0) {
+                return true;
+              }
+              // Show projects that have at least one selected skill
+              return topic.skills.some((skill) =>
+                selectedSkills.includes(skill.title)
+              );
+            })
+            .map((topic) => (
+              <div className="my-project-item">
+                <div className="my-project-img">
+                  <Link to={`/project/${topic.id}`}>
+                    <img src={`${topic.image}`} alt="" />
+                    <h2>{topic.title}</h2>
+                    <p>{topic.description}</p>
+
+                    <div className="project-skills">
+                      {topic.skills.map((skill) => (
+                        <span key={skill.id} className="skill-tag-2">
+                          {skill.title}
+                        </span>
+                      ))}
+                    </div>
+
+                    <div className="project-btn">
+                      <button>see more</button>
+                    </div>
+                  </Link>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
+            ))}
+        </div>
       </div>
     </motion.div>
   );

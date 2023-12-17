@@ -5,11 +5,11 @@ import { motion, useScroll } from "framer-motion";
 import { useLoaderData } from "react-router-dom";
 import { getTopic } from "../data/dataservice";
 
-import MyRole from "../components/MyRole";
-import ProjectDescription from "../components/ProjectDescription";
-import ProjectTechno from "../components/ProjectTechno";
+import MyRole from "../components/project/MyRole";
+import ProjectDescription from "../components/project/ProjectDescription";
+import ProjectTechno from "../components/project/ProjectTechno";
 import Footer from "../components/Footer";
-import ProjectObjectives from "../components/ProjectObjectives";
+import ProjectObjectives from "../components/project/ProjectObjectives";
 
 export async function loader({ params }) {
   const topic = await getTopic(params.id);
@@ -31,13 +31,15 @@ export default function Projects() {
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
       />
-      <button className="back-button">
-        <a href="/">Back</a>
-      </button>
-      <div className="project-bakcground">
+      <div>
+        <button className="back-button">
+          <a href="/">Back</a>
+        </button>
+
         <div className="project">
           <main>
             <ProjectDescription />
+
             <MyRole />
             <ProjectTechno />
             <ProjectObjectives />
