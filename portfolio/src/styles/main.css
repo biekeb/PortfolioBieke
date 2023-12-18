@@ -25,6 +25,7 @@ header {
 }
 
 .about-me {
+  margin-left: 15%;
   margin: 5%;
   display: flex;
   flex-direction: column;
@@ -120,5 +121,12 @@ header {
   .canvas Canvas {
     width: 500px;
     height: 500px;
+  }
+  .about-me h1 {
+    margin-left: 15%;
+  }
+
+  .about-me p {
+    margin-left: 15%;
   }
 }
